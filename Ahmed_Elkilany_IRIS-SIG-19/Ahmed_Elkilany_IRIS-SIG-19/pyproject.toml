@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gazette-harvester"
+version = "0.1.0"
+description = "Harvester for Nussbaum Medien municipal gazette issues (IRIS-SIG-19)"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "psycopg[binary]>=3.1",
+    "pyproj>=3.6",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "responses>=0.25", "shapely>=2.0"]
+gis = ["shapely>=2.0"]
+
+[project.scripts]
+gazette-harvester = "gazette_harvester.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["pg: needs a PostGIS database (set IRIS_TEST_DSN)"]

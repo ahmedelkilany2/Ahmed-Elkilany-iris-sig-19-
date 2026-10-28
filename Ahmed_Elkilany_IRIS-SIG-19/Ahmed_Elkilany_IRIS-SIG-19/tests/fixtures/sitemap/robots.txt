@@ -1,0 +1,16 @@
+# Copy of the relevant parts of https://www.nussbaum.de/robots.txt as read on 2026-10-27
+User-agent: *
+Crawl-delay: 10
+Disallow: /mein-konto
+Disallow: /auth/
+Disallow: /api/
+Disallow: /go/
+Disallow: /link
+Disallow: /labs/
+
+User-agent: GPTBot
+User-agent: ClaudeBot
+Disallow: /
+
+Sitemap: https://services.www.nussbaum.de/sitemap.xml
+Sitemap: https://services.www.nussbaum.de/sitemap_archive.xml

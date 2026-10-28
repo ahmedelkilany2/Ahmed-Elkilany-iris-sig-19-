@@ -1,0 +1,31 @@
+
+[ok] row_counts_by_geo_status
+    ('resolved', 75)
+    ('unresolved', 3)
+
+[ok] duplicate_natural_keys
+
+[ok] wrong_srid_or_invalid_geometry
+
+[ok] points_outside_bw_envelope
+
+[ok] geometry_and_geo_status_disagree
+
+[ok] missing_mandatory_fields
+
+[ok] future_or_implausible_publication_dates
+
+[ok] joint_gazette_members_more_than_25km_apart
+
+[ok] locations_not_resolved
+    ('amtsblatt-musterstadt', 'Musterstadt', 'unresolved', "'Musterstadt' not in gazetteer", 3)
+
+[ok] issues_per_publication
+    ('amtsblatt-bammental', 13, datetime.date(2026, 7, 29), datetime.date(2026, 10, 21))
+    ('amtsblatt-musterstadt', 3, datetime.date(2026, 3, 4), datetime.date(2026, 4, 15))
+    ('amtsblatt-wehingen', 12, datetime.date(2026, 5, 6), datetime.date(2026, 7, 22))
+
+[ok] quality_flags_seen
+    ('geo_unresolved', 3)
+    ('municipality_inferred_from_url_slug', 3)
+    ('issue_number_vs_calendar_week_mismatch', 1)

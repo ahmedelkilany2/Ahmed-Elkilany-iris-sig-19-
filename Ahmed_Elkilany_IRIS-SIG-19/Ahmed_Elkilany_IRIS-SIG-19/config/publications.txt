@@ -1,0 +1,4 @@
+# Seed list, only used when the Kiosk index page yields no links
+# (for example because it is rendered client-side). One publication page per line.
+https://www.nussbaum.de/kiosk/mitteilungsblaetter/amtsblatt-bammental
+https://www.nussbaum.de/kiosk/mitteilungsblaetter/amtsblatt-wehingen
